@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Ubuntu");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+$color-main: #212c42;
+$color-secondary: #151c2b;
+$color-btn: #525a6a;
+$color-green-light: #a3ea2a;
+$color-red-light: #eb0037;
+$color-black: black;
+$color-dots: rgb(247, 177, 0);
+
+body {
+  color: #ececec;
+  font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+}
+
+.theme-green {
+  border: 1px solid $color-green-light;
+  box-shadow: 0px 0px 4px 2px $color-green-light;
+  color: $color-green-light;
+  text-shadow: 1px 1px 2px $color-green-light;
+}
+.theme-color {
+  color: $color-green-light;
+  text-shadow: 0 1px 1px $color-green-light;
+}
+.theme-arrow {
+  border: 1px solid $color-green-light;
+}
+.theme-line {
+  background-color: $color-green-light;
+  padding: 0.06rem;
+}
+// wraper for header/body
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// default heading style
+.font-heading {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+  font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+}
+
+.special-grid {
+  grid-column: 3/6;
+  grid-row: 2/5;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem 0.5rem;
+  border-radius: 7px;
+}
+.dots-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 14px 4px;
+  // background-color: black;
+}
+
+.custom-dots {
+  margin: auto;
+  border: 1px solid $color-dots;
+  padding: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 5px;
+  gap: 4px;
+  width: 8.4rem;
+  min-width: 8.4rem;
+  max-width: 8.4rem;
+  height: 8.4rem;
+  min-height: 8.4rem;
+  max-height: 8.4rem;
+  padding: 0.4rem;
+  &__dots {
+    align-self: flex-start;
+    width: 0.75rem;
+    height: 1rem;
+    background-color: $color-dots;
+    border-radius: 4px;
+    box-shadow: 0 0 11px 1px $color-dots;
+  }
+}
+// button styles & animation
+@import "./modules/btnstyle";
+@import "./modules/animations";
+@import "./modules/customscroll";

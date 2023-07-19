@@ -1,0 +1,68 @@
+.btn-container {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+
+  button,
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: $color-btn;
+    width: 50%;
+    margin: auto;
+    padding: 0.5rem 0;
+    transition: 0.3s all ease-in-out;
+    border-radius: 10px;
+    font-weight: 400;
+    border: none;
+    color: #ececec;
+    font-size: 1.2rem;
+    font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+
+    &:hover {
+      background-color: #212c42;
+      border: 1px solid #ececec;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+}
+.btn-container-2 {
+  text-align: center;
+
+  button,
+  input[type="submit"] {
+    cursor: pointer;
+    background-color: $color-btn;
+    width: 100%;
+    padding: 0.5rem 0;
+    transition: 0.3s all ease-in-out;
+    border-radius: 10px;
+    font-weight: 400;
+    border: none;
+    color: #ececec;
+    font-size: 1.2rem;
+    font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+
+    &:hover {
+      background-color: #212c42;
+      outline: 1px solid #ececec;
+      border: none;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .btn-container {
+    button,
+    input[type="submit"] {
+      width: 80%;
+    }
+  }
+}

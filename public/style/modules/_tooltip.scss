@@ -1,0 +1,27 @@
+//data attribute must be with class data-tooltip="Play"
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 8px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}

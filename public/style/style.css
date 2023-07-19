@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Ubuntu");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #ececec;
+  font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+}
+
+.theme-green {
+  border: 1px solid #a3ea2a;
+  box-shadow: 0px 0px 4px 2px #a3ea2a;
+  color: #a3ea2a;
+  text-shadow: 1px 1px 2px #a3ea2a;
+}
+
+.theme-color {
+  color: #a3ea2a;
+  text-shadow: 0 1px 1px #a3ea2a;
+}
+
+.theme-arrow {
+  border: 1px solid #a3ea2a;
+}
+
+.theme-line {
+  background-color: #a3ea2a;
+  padding: 0.06rem;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-heading {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 500;
+  font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+}
+
+.special-grid {
+  grid-column: 3/6;
+  grid-row: 2/5;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem 0.5rem;
+  border-radius: 7px;
+}
+
+.dots-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 14px 4px;
+}
+
+.custom-dots {
+  margin: auto;
+  border: 1px solid rgb(247, 177, 0);
+  padding: 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 5px;
+  gap: 4px;
+  width: 8.4rem;
+  min-width: 8.4rem;
+  max-width: 8.4rem;
+  height: 8.4rem;
+  min-height: 8.4rem;
+  max-height: 8.4rem;
+  padding: 0.4rem;
+}
+.custom-dots__dots {
+  align-self: flex-start;
+  width: 0.75rem;
+  height: 1rem;
+  background-color: rgb(247, 177, 0);
+  border-radius: 4px;
+  box-shadow: 0 0 11px 1px rgb(247, 177, 0);
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.btn-container button,
+.btn-container input[type=submit] {
+  cursor: pointer;
+  background-color: #525a6a;
+  width: 50%;
+  margin: auto;
+  padding: 0.5rem 0;
+  transition: 0.3s all ease-in-out;
+  border-radius: 10px;
+  font-weight: 400;
+  border: none;
+  color: #ececec;
+  font-size: 1.2rem;
+  font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+}
+.btn-container button:hover,
+.btn-container input[type=submit]:hover {
+  background-color: #212c42;
+  border: 1px solid #ececec;
+}
+.btn-container button:active,
+.btn-container input[type=submit]:active {
+  outline: none;
+}
+
+.btn-container-2 {
+  text-align: center;
+}
+.btn-container-2 button,
+.btn-container-2 input[type=submit] {
+  cursor: pointer;
+  background-color: #525a6a;
+  width: 100%;
+  padding: 0.5rem 0;
+  transition: 0.3s all ease-in-out;
+  border-radius: 10px;
+  font-weight: 400;
+  border: none;
+  color: #ececec;
+  font-size: 1.2rem;
+  font-family: "Source Sans Pro", "Ubuntu", sans-serif !important;
+}
+.btn-container-2 button:hover,
+.btn-container-2 input[type=submit]:hover {
+  background-color: #212c42;
+  outline: 1px solid #ececec;
+  border: none;
+}
+.btn-container-2 button:active,
+.btn-container-2 input[type=submit]:active {
+  border: none;
+}
+
+@media screen and (max-width: 750px) {
+  .btn-container button,
+  .btn-container input[type=submit] {
+    width: 80%;
+  }
+}
+.slide-bottom {
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  90%, to {
+    width: 0;
+  }
+}
+.typing-slider {
+  position: relative;
+}
+
+.typing-slider li {
+  animation: slide 4s;
+}
+
+.typing-slider li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212c42;
+  animation: typing 4s, cursor 4s;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(87, 121, 30, 0.7333333333);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a3ea2a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(87, 121, 30, 0.7333333333);
+}/*# sourceMappingURL=style.css.map */
