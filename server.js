@@ -35,6 +35,6 @@ server.listen(port, () => {
 
 app.use("*", (req, res) => {
   res.status(500).json({
-    status: "You just hit the wrong route.",
+    status: "You hit the wrong route!",
   });
 });

@@ -12,7 +12,7 @@ Router.post("/nostromo", (req, res) => {
     if (err) {
       res.status(500).json({
         status: "error",
-        message: "Failed to read the file.",
+        message: "Science Office Eyes Only",
       });
       return;
     }

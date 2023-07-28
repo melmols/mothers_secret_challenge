@@ -39,9 +39,9 @@ const authWebSocket = () => {
 authWebSocket();
 
 const modifyData = () => {
-  contentx[2] = "Ash";
+  contentx[2] = "Science Officer";
   contentx[3] = atob("VEhNX0ZMQUd7MFJEM1JfOTM3fQ==");
-  document.querySelector(".crew-member").innerHTML = "Ash";
+  document.querySelector(".crew-member").innerHTML = "{ANDR01D_A$H}";
 };
 
 let totalCustomDotsContainer = 32;
