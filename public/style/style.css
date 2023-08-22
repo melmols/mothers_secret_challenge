@@ -90,6 +90,20 @@ body {
   box-shadow: 0 0 11px 1px rgb(247, 177, 0);
 }
 
+.descr-box {
+  width: 20rem;
+}
+
+@media screen and (max-width: 765px) {
+  .special-grid {
+    grid-column: 2/5;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .descr-box {
+    width: 14rem;
+  }
+}
 .btn-container {
   width: 100%;
   text-align: center;

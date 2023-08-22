@@ -1,6 +1,6 @@
 import express from "express";
 import fs from "fs";
-import { attachWebSocket } from "../websocket.js";
+import { attachWebSocket } from "../../mothers_secret_challenge/websocket.js";
 
 const Router = express.Router();
 
@@ -12,7 +12,7 @@ Router.post("/nostromo", (req, res) => {
     if (err) {
       res.status(500).json({
         status: "error",
-        message: "Science Office Eyes Only",
+        message: "Science Officer Eyes Only",
       });
       return;
     }
