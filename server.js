@@ -27,7 +27,7 @@ attachWebSocket(server); //connecting websocket to server
 app.use("/api", routeNostromo);
 app.use("/yaml", routeYaml);
 
-const port = 3000 || process.env.PORT;
+const port = 80 || process.env.PORT;
 // Start the server
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
