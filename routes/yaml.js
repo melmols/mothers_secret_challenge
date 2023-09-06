@@ -7,6 +7,8 @@ const Router = express.Router();
 
 const isYaml = (filename) => filename.split(".").pop() === "yaml";
 
+export let isYamlAuthenticate = false;
+
 Router.post("/", (req, res) => {
   let file_path = req.body.file_path;
   const filePath = `./public/${file_path}`;
@@ -27,7 +29,7 @@ Router.post("/", (req, res) => {
       });
       return;
     }
-
+    isYamlAuthenticate = true
     res.status(200).send(yaml.load(data));
 
     attachWebSocket().of("/yaml").emit("yaml", "YAML data has been processed.");
